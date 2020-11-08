@@ -63,7 +63,7 @@ jobs:
         REPO_BRANCH: master
         OPEN_CLASH_VERSION: v0.40.15-beta
       run: |
-        git clone --depth 1 https://github.com/vernesong/OpenClash.git -b OPEN_CLASH_VERSION
+        git clone --depth 1 https://github.com/vernesong/OpenClash.git -b $OPEN_CLASH_VERSION
         git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
         mv OpenClash/luci-app-openclash openwrt/package/lean 
         cd openwrt
